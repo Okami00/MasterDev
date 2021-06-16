@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: black;
+    font-family: 'Varela Round', sans-serif;
+}
+:root {
+    --primary-color: #aacb88;
+    --secondary-color: #bbd59f;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80rem;
+    height: 60rem;
+    background: linear-gradient(25deg, var(--primary-color) 50%, var(--secondary-color) 50%);
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56.5rem;
+    height: 49rem;
+    background-color: white;
+}
+input[type=text]{
+    height: 3rem;
+    width: 28rem;
+    padding: 5px;
+    border: none;
+    border-bottom: 0.1px solid #d8d6d6;
+    margin-bottom: 2rem;
+}
+input[type=text]:nth-child(2){
+    margin-left: 1rem;
+    width: 13rem;
+}
+input[type=text]:first-child{
+    width: 13rem;
+}
+
+input[type=text]::placeholder{
+    color: #d8d6d6;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.form__message{
+    padding-bottom: 2rem;
+}
+.form{
+    width: 28rem;
+    height: 37.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(22.5rem, 5rem);
+}
+.form__title{
+    font-weight: bolder;
+    font-size: 4.6rem;
+}
+.form__name{
+    display: flex;
+}
+.form__submit{
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    width: 28rem;
+    height: 4rem;
+    border-radius: 10rem;
+    background: linear-gradient(to right, #3c3c3c, black);
+    box-shadow: 0px 20px 31px -8px rgba(0,0,0,0.75);
+    color: white;
+    letter-spacing: 2px;
+}
+.image{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

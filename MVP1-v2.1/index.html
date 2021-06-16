@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="score">
+            <span>0</span>
+        </div>
+        <div class="question">
+            <h1 class="question__detail"></h1>
+        </div>
+        <div class="answer">
+            <button class="answer__btn btn" id="but0" onclick="reply_click(this.id)"></button>
+            <button class="answer__btn btn" id="but1" onclick="reply_click(this.id)"></button>
+            <button class="answer__btn btn" id="but2" onclick="reply_click(this.id)"></button>
+            <button class="answer__btn btn" id="but3" onclick="reply_click(this.id)"></button>
+        </div>
+        <div class="start">
+            <button class="start__btn btn" onclick="startClick()">Start</button>
+        </div>
+        <div class="timer">
+            <span id="time">10</span>
+        </div>
+        <!-- Show result quiz  -->
+        <div class="notification">
+            <h1>Your Score: <span id="noti__score">0</span> </h1>
+            <button class="notification__btn btn" onclick="timeUp()">OK</button>
+        </div>
+        <!-- Show message notidfy correct or incorrect -->
+        <div class="showMessage">
+            <h3>Correct !!!</h3>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="main.js"></script>
+</body>
+
+</html>
